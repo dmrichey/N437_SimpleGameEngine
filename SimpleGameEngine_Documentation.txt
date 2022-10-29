@@ -1,0 +1,22 @@
+This implementation of a simple Game Engine is developed using HTML and Javascript using the p5.js 
+library as an additional tool supporting timing, graphics rendering, and keyboard input.
+
+The ADT provided in class was used as a base for this implementation, though the Scene class was largely 
+broken down into global variables and p5 functions.
+
+The sample game programmed into this implementation involves moving a basic player sprite using WASD
+to collect static sprites around the scene. 
+
+Current state of this implementation includes issues with bounding and collision. The bounding issue for
+WRAP and BOUNCE bounding actions results in the player sprite being removed from the game, and the STOP 
+action locking the player to the boundary wall. The collision issue is registering collisions with all
+sprites simultaneously, even without the player sprite coming into contact with the static sprites. The
+cause of this issue has not yet been identified, though likely has a source in improper use of the 
+collision principles present in Prof. Harris' simple game code.
+
+In addition to these issues, further work would be needed to enable the engine to operate as a template
+for other programs, as the current functionality is largely keyed to the specific example this 
+implementation is presenting.
+
+A repl.it link for the assignment is included:
+https://replit.com/@dmrichey/Simple-Game-Engine#index.html
